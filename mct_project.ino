@@ -45,6 +45,17 @@ void loop()
     // Print distance to Serial Monitor
     Serial.print("Distance: ");
     Serial.println(distance);
+    // Control servo based on distance
+    if (distance <= 10) 
+    { // Adjust threshold as per sensor placement
+        servo.write(90);
+        delay(1500);
+    } 
+    else 
+    {
+        servo.write(180);
+    }
 
+    delay(100); // Small delay for stability
    
 }
