@@ -10,7 +10,8 @@ const int echoPin = 12;
 long duration;
 int distance;
 
-void setup() {
+void setup() 
+{
     // Attach servo to pin 13 and set initial position
     servo.attach(13);
     servo.write(180);
@@ -24,7 +25,8 @@ void setup() {
     Serial.begin(9600);
 }
 
-void loop() {
+void loop() 
+{
     // Clear the trigPin
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
@@ -44,13 +46,5 @@ void loop() {
     Serial.print("Distance: ");
     Serial.println(distance);
 
-    // Control servo based on distance
-    if (distance <= 10) { // Adjust threshold as per sensor placement
-        servo.write(90);
-        delay(1500);
-    } else {
-        servo.write(180);
-    }
-
-    delay(100); // Small delay for stability
+   
 }
