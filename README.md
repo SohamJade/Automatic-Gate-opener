@@ -4,7 +4,7 @@ This project demonstrates how to build a model automatic gate or parking barrier
 
 
 
-## 🚧 Features
+## Features
 
 -   **Automatic Gate Operation**: The gate arm lifts automatically when an object is detected in front of it.
 -   **Contactless Activation**: Provides convenient, automated access without any physical contact.
@@ -13,11 +13,11 @@ This project demonstrates how to build a model automatic gate or parking barrier
 
 ***
 
-## ⚙️ Components Required
+## Components Required
 
 | Component                   | Quantity |
 | --------------------------- | :------: |
-| Arduino Uno (or similar)    |    1     |
+| Arduino Uno                 |    1     |
 | HC-SR04 Ultrasonic Sensor |    1     |
 | SG90 Servo Motor            |    1     |
 | Jumper Wires                |  Several |
@@ -26,7 +26,7 @@ This project demonstrates how to build a model automatic gate or parking barrier
 
 ***
 
-## 🔌 Wiring Diagram
+## Wiring Diagram
 
 Connect the components to the Arduino. The wiring is the same for a gate as it is for any other servo/sensor project.
 
@@ -47,7 +47,7 @@ Connect the components to the Arduino. The wiring is the same for a gate as it i
 
 ***
 
-## 🚀 How It Works
+## How It Works
 
 1.  **Initialization**: When the Arduino is powered on, the servo motor moves to the 'closed' position (**180 degrees**), keeping the gate down.
 2.  **Sensing**: The ultrasonic sensor continuously sends out sound pulses to scan the area in front of the gate.
@@ -59,7 +59,7 @@ Connect the components to the Arduino. The wiring is the same for a gate as it i
 
 ***
 
-## 🛠️ Setup and Installation
+## Setup and Installation
 
 1.  **Hardware Assembly**:
     * Connect all the electronics according to the wiring diagram.
@@ -80,7 +80,7 @@ Connect the components to the Arduino. The wiring is the same for a gate as it i
 
 ***
 
-## 🔧 Customization
+## Customization
 
 You can easily modify the code to change the gate's behavior:
 
