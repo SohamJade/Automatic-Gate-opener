@@ -51,11 +51,12 @@ void loop()
         servo.write(90);
         delay(1500);
     } 
-    else 
-    {
-        servo.write(180);
+    else {
+    // Slowly move the servo from open (90) to closed (180)
+        for (int pos = 90; pos <= 180; pos += 1) {
+            servo.write(pos);
+            delay(15); // Adjust this value to change the speed (larger = slower)
+        }
     }
-
     delay(100); // Small delay for stability
-   
 }
